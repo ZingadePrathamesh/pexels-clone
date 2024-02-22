@@ -1,0 +1,9 @@
+.parent-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/intro_img.jpg");
+    background-size: cover;
+    height: 656px;
+    background-repeat: no-repeat;
+}
