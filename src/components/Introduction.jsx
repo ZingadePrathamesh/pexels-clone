@@ -4,9 +4,7 @@ import "../css/introduction.css";
 export default function Introduction(){
     return(
         <div className="parent-intro bg-slate-600 w-auto ">
-            <div className="top-intro bg-slate-300">
-                <Navbar/>
-            </div>
+            <Navbar/>
             <div className="middle-intro bg-slate-400">
                 MIDDLE
             </div>
