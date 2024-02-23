@@ -1,0 +1,9 @@
+.search-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-div input{
+   width: 600px;
+}
+

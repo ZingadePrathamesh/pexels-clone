@@ -16,7 +16,7 @@
     overflow: hidden;
 }
 
-.logo-div{
+.logo-div , .right-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,4 +28,5 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 16px
+    
 }
