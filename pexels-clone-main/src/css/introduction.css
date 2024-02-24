@@ -6,4 +6,5 @@
     background-size: cover;
     height: 656px;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
 }
