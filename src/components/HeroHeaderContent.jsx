@@ -16,11 +16,11 @@ const HeroHeaderContent = () => {
                 <div className="text-center">
                     <p className="text-[0.75rem] md:text-2xl text-gray-800 font-semibold">Trending:</p>
                     <ul className="flex justify-center mt-2">
-                        <li className="mr-2"><a href="#" className="text-white hover:underline">Nature</a>,</li>
-                        <li className="mr-2"><a href="#" className="text-white hover:underline">City</a>,</li>
-                        <li className="mr-2"><a href="#" className="text-white hover:underline">Technology</a>,</li>
-                        <li className="mr-2"><a href="#" className="text-white hover:underline">Travel</a>,</li>
-                        <li><a href="#" className="text-white hover:underline">Business</a></li>
+                        <li className="mr-2"><a href="#" onClick={()=> localStorage.setItem("query", "Nature")} className="text-white hover:underline">Nature</a>,</li>
+                        <li className="mr-2"><a href="#" onClick={()=> localStorage.setItem("query", "City")} className="text-white hover:underline">City</a>,</li>
+                        <li className="mr-2"><a href="#" onClick={()=> localStorage.setItem("query", "Technology")} className="text-white hover:underline">Technology</a>,</li>
+                        <li className="mr-2"><a href="#" onClick={()=> localStorage.setItem("query", "Travel")} className="text-white hover:underline">Travel</a>,</li>
+                        <li><a href="#" onClick={()=> localStorage.setItem("query", "Business")} className="text-white hover:underline">Business</a></li>
                     </ul>
                 </div>
             </div>
