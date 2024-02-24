@@ -5,25 +5,26 @@ const client = createClient('PJjxFxvwiSH7ft7Vznm66YqvB9HIfQc9LcZvzDnDCKJWQKs0Oun
 
 const ImageList = () => {
   const [data, setData] = useState([]);
-  const [query, setquery] = useState('Nature');
+  const [query, setquery] = useState(localStorage.getItem("query"));
   useEffect(() => {
     const fetchData = async () => {
       try {
         console.log("fetching");
         const response = await client.photos.search({ query, per_page: 15 });
         console.log("fetched");
+        console.log(response);
         setData(response.photos);
       } catch (error) {
         console.error('Error fetching images:', error);
       }
     };
-    setquery(localStorage.getItem("query"))
-
+  
     fetchData();
-  }, [query]);
+  }, [localStorage]);
 
   return (
-    <div className='w-[100vw] h-[50vh] grid grid-cols-1 md:grid-cols-3 mx-auto justify-center'>
+    <div className='w-[100vw] grid grid-cols-1 md:grid-cols-3 mx-auto justify-center'>
+      <h1> Ima</h1>
       {[0, 1, 2].map((columnIndex) => (
         <div key={columnIndex} className='m-2'>
           {data.map((photo, index) => {
@@ -32,7 +33,7 @@ const ImageList = () => {
               return (
                 <img
                   key={index}
-                  src={photo.src.original}
+                  src={photo.src.large2x}
                   alt={`Dummy Image ${index}`}
                   className='m-8'
                 />
