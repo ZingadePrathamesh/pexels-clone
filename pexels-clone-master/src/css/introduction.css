@@ -1,0 +1,26 @@
+.parent-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("../images/intro_img.jpg");
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+
+.four-btn-div{
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(133, 133, 133);
+    padding: 16px 0 ;
+    width: 160px;
+}
+.four-btn-div:hover{
+    color: rgb(80, 80, 80);
+}
+.four-btn-div.active{
+    color: rgb(244, 244, 244);
+    background-color: black;
+    border-radius: 80px;
+}
