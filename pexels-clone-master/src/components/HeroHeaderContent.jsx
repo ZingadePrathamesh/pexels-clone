@@ -19,9 +19,9 @@ const HeroHeaderContent = () => {
         <>
             <div className='flex flex-col items-center'>
 
-                <header className="text-white md:py-4 py-1 items-start">
+                <header className="text-white md:py-4 py-1 items-start m-8 md:m-1">
                     <div className="container mx-auto text-center md:w-[40vw] flex flex-col justify-start">
-                        <h1 className="text-xl md:text-4xl text-left font-bold mb-8">The best free stock photos, royalty free images & videos shared by creators.</h1>
+                        <h1 className="text-xl md:text-4xl md:text-left text-center font-bold mb-8">The best free stock photos, royalty free images & videos shared by creators.</h1>
                         <div className=" bg-white flex rounded-lg flex-row justify-between items-center w-[25rem] md:w-[45rem]">
                             <button onClick={search} className="bg-neutral-200 mx-2 my-2 text-2xl text-gray-900 p-2 px-4 rounded-lg flex-2">Photos </button>
                             <input type="text" onKeyPress={(e) => {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { IoMdSearch } from "react-icons/io";
 import ImageList from './ImageList';
+import Navbar from './Navbar'
 
 const SearchResults = () => {
 
@@ -19,6 +20,7 @@ const SearchResults = () => {
 
     return (
         <>
+        <Navbar/>
             <div className='flex flex-col mt-[5rem] justify-center items-center'>
                 <div className=" bg-white flex rounded-lg flex-row justify-between items-center border-2">
                     <button onClick={search} className="bg-neutral-200 mx-2 my-2 text-2xl text-gray-900 p-2 px-4 rounded-lg flex-2">Photos </button>
@@ -40,7 +42,7 @@ const SearchResults = () => {
                     </ul>
                 </div>
                 <div>
-                    <h1>Showing Results for {query}</h1>
+                    <h1 className='text-2xl'>Showing Results for {query}</h1>
                     <ImageList query={query}/>
                 </div>
             </div>
