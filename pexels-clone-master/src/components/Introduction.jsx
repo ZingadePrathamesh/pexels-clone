@@ -25,7 +25,6 @@ export default function Introduction(){
                     </h3>
                 </div>
             </div>
-            {/* For the buttons present between the image list and the search bar */}
             <div className="flex flex-row items-center justify-center my-8">
                 <ul className="four-btn flex flex-row items-center justify-center">
                     <li><div onClick={()=> handleFourBtnToggle("Home")} className={fourBtnToggle==="Home"? ' four-btn-div active' :'four-btn-div'}>Home</div></li>
@@ -35,7 +34,7 @@ export default function Introduction(){
                 </ul>
             </div>
             <div>
-                <ImageList/>
+                <ImageList query="Beautifull Nature"/>
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Introduction from './components/Introduction';
 import ImageList from './components/ImageList';
-import HeroHeaderContent from './components/HeroHeaderContent';
+import SearchResults from './components/SearchResults';
 
 function App() {
   return (
@@ -11,9 +11,7 @@ function App() {
       <div className="App overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Introduction />} />
-          <Route path="/images" element={<ImageList />} />
-          <Route path="/search" element={<HeroHeaderContent />} />
-          {/* Add more routes as needed */}
+          <Route path="/search/:query" element={<SearchResults />} />
         </Routes>
       </div>
     </Router>
